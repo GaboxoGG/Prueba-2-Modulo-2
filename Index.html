@@ -3,25 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/Estilos.css">
     <title>Prueba Modulo 2</title>
 </head>
 <body>
-    <section>
+    <section class="Container">
 <!--Cabeza-->
-        <div>Cabeza</div>
+        <div class="Cabeza">
+            <h2>
+                Ordenar Por:
+            </h2>
+            <div>
+                <form class="Rotación de Cartas">
+                   <select id="Rotación" name="Rotación">
+                     <option value="">--Rotaciones--</option>
+                     <option value="rojo">Rotación I</option>
+                     <option value="verde">Rotación H</option>
+                     <option value="azul">Rotación G</option>
+                     <option value="Amarillo">Anteriores</option>
+                   </select>
+                </form>
+            </div>
+        </div>
 <!--Cabeza Fin-->
 
 <!--Barra-->
-        <div>barra</div>
+        <div class="Barra">
+            <h2>Pokémon Tcg</h2>
+            <h2 class="Hamburgesa"><i class="fa-solid fa-list"></i></h2>
+            <div class="Pc">
+                <p class="Pc">Inicio</p>
+                <p class="Pc">Catalogo</p>
+                <p class="Pc">Ofertas</p>
+                <p class="Pc">Contacto</p>
+            </div>
+        </div>
 <!--Barra Fin-->
 
 <!--Cuerpo-->
-        <div>cuerpo</div>
+        <div class="Cuerpo">cuerpo</div>
 <!--Cuerpo Fin-->
 
 <!--Pie-->
-        <div>pie</div>
+        <footer class="Pie">
+            <div>
+                <a href="https://www.facebook.com/gabriel.arriagada.10/" target="_blank" class="fa-brands fa-facebook" title="Ir a Facebook"></a><a href="https://www.instagram.com/gaboxogg/" target="_blank" class="fa-brands fa-instagram" title="Ir a Instagram"></a>
+                <br>
+                Todos los derechos reservados
+            </div>
+        </footer>
 <!--Pie Fin-->
     </section>
 </body>

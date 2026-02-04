@@ -1,0 +1,66 @@
+@media (max-width: 576px) {
+    body{
+        margin: 0px;
+        border: 0px;
+    }
+    .Container{
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "B B B"
+        "A A A"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "C C C"
+        "D D D";
+
+    }
+
+    .Cabeza{
+        grid-area: A;
+        background-color: red;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #Rotación{
+        appearance: none;
+        width: 80%;
+        
+    }
+
+    .Barra{
+        grid-area: B;
+        background-color: yellow;
+        display: flex;
+        justify-content: space-around;
+        grid-area: B;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .Pc{
+        display: none;
+    }
+
+    .Cuerpo{
+        grid-area: C;
+
+    }
+
+    .Pie{
+        grid-area: D;
+        background-color: chartreuse;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+}
