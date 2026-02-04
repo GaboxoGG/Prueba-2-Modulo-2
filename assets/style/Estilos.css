@@ -3,28 +3,29 @@
         margin: 0px;
         border: 0px;
     }
+
     .Container{
         height: 100vh;
         display: grid;
         grid-template-areas:
-        "B B B"
-        "A A A"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "C C C"
-        "D D D";
+        "B B B B"
+        "A A A A"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "C C C C"
+        "D D D D";
 
     }
 
     .Cabeza{
         grid-area: A;
-        background-color: red;
+        background-color: #BA5536;
         text-align: center;
         padding: 10px;
     }
@@ -37,12 +38,17 @@
 
     .Barra{
         grid-area: B;
-        background-color: yellow;
+        background-color: #A43820;
         display: flex;
         justify-content: space-around;
         grid-area: B;
         text-align: center;
-        padding: 0%;
+        padding-left: 0%;
+    }
+
+    .Logo{
+        width: 50px;
+        height: 50px;
     }
 
     .Pc{
@@ -51,12 +57,43 @@
 
     .Cuerpo{
         grid-area: C;
+        padding: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+    }
 
+    .Muestra{
+        background-color: white;
+        border: solid 1px;
+        margin: 10px;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .boton{
+        background-color: rgb(230, 107, 66);
+        padding: 7px;
+        border-radius: 5px;
+        transition: background-color 1s ease-out;
+    }
+
+    .boton:hover{
+        background-color: burlywood;
+        width: 50px;
+    }
+
+    .FondoCuerpo{
+        background-size: cover;
+        background-repeat: repeat-y;
     }
 
     .Pie{
         grid-area: D;
-        background-color: chartreuse;
+        background-color: #693D3D;
         display: flex;
         justify-content: center;
         align-items: center;
