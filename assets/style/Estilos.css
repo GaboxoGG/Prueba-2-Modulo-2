@@ -74,6 +74,15 @@
         text-align: center;
     }
 
+    .Megas{
+        color: black;
+        transition: all 1s;
+    }
+
+    .Megas:hover{
+        color: darkcyan;
+    }
+
     .boton{
         background-color: rgb(230, 107, 66);
         padding: 7px;
