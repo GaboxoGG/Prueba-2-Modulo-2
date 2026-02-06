@@ -1,3 +1,5 @@
+/*Telefono*/
+
 @media (max-width: 576px) {
     body{
         margin: 0px;
@@ -33,6 +35,7 @@
     #Rotación{
         appearance: none;
         width: 80%;
+        text-align: center;
         
     }
 
@@ -62,6 +65,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: start;
+        background-color: #C9B4A2;
     }
 
     .Muestra{
@@ -100,6 +104,15 @@
         background-repeat: repeat-y;
     }
 
+    .card-img-top{
+        transform: rotate(0deg);
+
+    }
+
+    .card-img-top:hover{
+        transform: rotate(45deg);
+    }
+
     .Pie{
         grid-area: D;
         background-color: #693D3D;
@@ -108,5 +121,88 @@
         align-items: center;
         text-align: center;
         padding: 10px;
+    }
+}
+
+/*Computador*/
+
+@media (min-width: 940px) {
+    body{
+        margin: 0px;
+        border: 0px;
+    }
+
+    .Container{
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+        "B A A A A A A A A A"
+        "B C C C C C C C C C"
+        "B C C C C C C C C C"
+        "B C C C C C C C C C"
+        "B C C C C C C C C C"
+        "B C C C C C C C C C"
+        "B C C C C C C C C C"
+        "D D D D D D D D D D";
+    }
+
+    .Cabeza{
+        grid-area: A;
+        background-color: #BA5536;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    #Rotación{
+        appearance: none;
+        width: 80%;
+        text-align: center;
+        
+    }
+
+    .Barra{
+        grid-area: B;
+        background-color: #A43820;
+        font-size: 20px;
+    }
+
+    .Pc{
+        font-size: 20px;
+    }
+
+    .Logo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .Hamburgesa{
+        display: none;
+    }
+
+    .Cuerpo{
+        grid-area: C;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 10px;
+        padding: 10px;
+        
+    }
+
+    .FondoCuerpo{
+        background-size: cover;
+    }
+
+    .Pie{
+        grid-area: D;
+        background-color: #693D3D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
     }
 }
